@@ -1,0 +1,13 @@
+{
+  "name": "Ragnarok: The New World Wiki",
+  "short_name": "Ragnarok Wiki",
+  "description": "The ultimate Ragnarok: The New World wiki — class builds, codes, tier lists, MVP hunting guides, and safe refining tips.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#d4a853",
+  "icons": [
+    { "src": "/favicon-96x96.png", "sizes": "96x96", "type": "image/png" },
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

@@ -1,0 +1,139 @@
+
+export const metadata = {
+  id: "refining-refine-cost-planner",
+  slug: "refine-cost-planner",
+  order: 3,
+  title: "Ragnarok The New World Refine Cost Planner - Budget Your Refinement",
+  description: "Refine cost planner for Ragnarok The New World. Calculate the expected Zeny cost, material requirements, and time investment for reaching any refinement target.",
+  keywords: ["Ragnarok The New World refine cost planner", "Ragnarok The New World +15 refinement cost", "Ragnarok The New World lower refining cost", "Ragnarok The New World refinement failure rate"],
+  category: "refining",
+  date: "2026-07-16",
+  lastModified: "2026-07-16",
+  image: "/images/articles/refining-cost-planner.webp",
+  video: "zWVS6aB4oTY",
+};
+
+## Perencana Biaya Refine untuk Ragnarok The New World
+
+Merencanakan investasi refine Anda memerlukan pemahaman tentang biaya yang diharapkan, kebutuhan material, dan waktu yang diperlukan untuk mencapai level target Anda. Sistem safe refining menghilangkan risiko kehancuran equipment, tetapi biaya yang meningkat di level yang lebih tinggi berarti mencapai +15 memerlukan perencanaan keuangan yang signifikan. Perencana biaya ini menyediakan data dan formula yang dibutuhkan untuk menganggarkan perjalanan refine Anda, baik Anda menargetkan +7 yang praktis atau +15 yang aspiratif.
+
+Wawasan kunci untuk penganggaran refine adalah bahwa biaya yang diharapkan dapat dihitung secara matematis. Karena sistem safe mencegah kehilangan equipment, setiap percobaan berhasil (naik satu level) atau gagal (tetap di level saat ini). Jumlah percobaan yang diharapkan untuk naik dari level N ke level N+1 sama dengan 1 dibagi tingkat keberhasilan di level N. Menjumlahkan percobaan yang diharapkan ini di semua level memberikan total biaya yang diharapkan untuk setiap level refine target.
+
+## Metode Perhitungan Biaya
+
+### Rumus Percobaan yang Diharapkan
+
+Jumlah percobaan yang diharapkan untuk naik dari level N ke N+1 dihitung sebagai:
+
+Percobaan yang Diharapkan = 1 / Tingkat Keberhasilan di Level N
+
+Misalnya, naik dari +6 ke +7 memiliki tingkat keberhasilan 55%, artinya percobaan yang diharapkan adalah 1 / 0,55 = 1,82 percobaan. Setiap percobaan memerlukan biaya Zeny dan material, sehingga total biaya yang diharapkan untuk kenaikan satu level ini sama dengan 1,82 dikalikan dengan biaya per percobaan.
+
+### Perhitungan Biaya Kumulatif
+
+Untuk menghitung total biaya yang diharapkan untuk mencapai level target, jumlahkan biaya yang diharapkan untuk setiap kenaikan level individu dari +0 ke target Anda.
+
+Total Biaya = Jumlah dari (Percobaan yang Diharapkan x Biaya Per Percobaan) untuk setiap level
+
+## Tabel Biaya Lengkap
+
+### Biaya Refine Senjata
+
+Tabel berikut memberikan perkiraan biaya Zeny per percobaan dan total biaya yang diharapkan untuk mencapai setiap level refine pada senjata standar. Biaya material sudah termasuk dalam perhitungan per percobaan.
+
+| Level | Tingkat Keberhasilan | Percobaan yang Diharapkan | Biaya per Percobaan | Total Biaya ke Level | Biaya Kumulatif |
+|-------|----------------------|---------------------------|---------------------|----------------------|-----------------|
+| Level 1 | 100% | 1,0 | 1.000 | 1.000 | 1.000 |
+| Level 2 | 100% | 1,0 | 2.000 | 2.000 | 3.000 |
+| Level 3 | 100% | 1,0 | 3.000 | 3.000 | 6.000 |
+| Level 4 | 95% | 1,05 | 5.000 | 5.263 | 11.263 |
+| Level 5 | 85% | 1,18 | 8.000 | 9.412 | 20.675 |
+| Level 6 | 70% | 1,43 | 12.000 | 17.143 | 37.818 |
+| Level 7 | 55% | 1,82 | 20.000 | 36.364 | 74.182 |
+| Level 8 | 40% | 2,50 | 35.000 | 87.500 | 161.682 |
+| Level 9 | 30% | 3,33 | 55.000 | 183.333 | 345.015 |
+| Level 10 | 20% | 5,00 | 80.000 | 400.000 | 745.015 |
+| Level 11 | 15% | 6,67 | 120.000 | 800.000 | 1.545.015 |
+| Level 12 | 10% | 10,0 | 180.000 | 1.800.000 | 3.345.015 |
+| Level 13 | 7% | 14,3 | 300.000 | 4.285.714 | 7.630.729 |
+| Level 14 | 5% | 20,0 | 500.000 | 10.000.000 | 17.630.729 |
+| Level 15 | 3% | 33,3 | 800.000 | 26.666.667 | 44.297.396 |
+
+### Analisis Tingkat Biaya
+
+| Target Refine | Perkiraan Total Biaya | Kategori Anggaran |
+|---------------|-----------------------|-------------------|
+| Level 4 | ~11K | Pemula |
+| Level 7 | ~74K | Early Game |
+| Level 10 | ~745K | Mid Game |
+| Level 12 | ~3,3Jt | Late Game |
+| Level 15 | ~44Jt+ | Endgame |
+
+## Perencanaan Kebutuhan Material
+
+### Material berdasarkan Rentang Refine
+
+Setiap rentang refine memerlukan material spesifik yang semakin langka. Merencanakan perolehan material bersamaan dengan anggaran Zeny mencegah penundaan saat Anda memiliki Zeny tetapi kekurangan material yang diperlukan.
+
+| Rentang | Material Utama | Sumber | Pendapatan Harian yang Diharapkan |
+|---------|----------------|--------|-----------------------------------|
+| Level 1 ke +4 | Basic Ore | NPC Vendor, Mob | Pasokan tak terbatas |
+| Level 5 ke Level 7 | Enriched Ore | Daily Dungeon, Crafting | 5-10 per hari |
+| Level 8 ke Level 10 | High-Grade Ore | MVP Drop, Mob Langka | 1-3 per hari |
+| Level 11 ke Level 15 | Premium Catalyst | Rare Drop, Event | Kurang dari 1 per hari |
+
+### Strategi Penimbunan Material
+
+Untuk level refine yang lebih tinggi, mulailah menimbun material langka jauh sebelum Anda berencana untuk refine. Hambatan di +10+ biasanya adalah material premium catalyst daripada Zeny. Dengan mengumpulkan katalis melalui [MVP hunting](/mvp-hunting/mvp-hunting-guide) harian dan dungeon run selama berminggu-minggu, Anda memastikan bahwa ketika Zeny Anda mencapai ambang refine, Anda sudah menyiapkan materialnya.
+
+## Perencanaan Anggaran berdasarkan Gaya Bermain
+
+### Anggaran Refine Bulanan F2P
+
+Pemain F2P aktif dapat mengakumulasi sekitar 500K hingga 1,5Jt Zeny per bulan melalui aktivitas harian yang konsisten. Anggaran berikut mengalokasikan sebagian dari pendapatan bulanan untuk refine:
+
+| Bulan | Zeny Bulanan | Anggaran Refine | Target |
+|-------|--------------|-----------------|--------|
+| 1 | 500K | 200K | Senjata ke +5 |
+| 2 | 700K | 300K | Senjata ke +7 |
+| 3-4 | 800K | 400K | Senjata ke +8-9 |
+| 5-6 | 1Jt | 600K | Senjata ke +10 |
+
+### Sumber Pendapatan Harian untuk Refine
+
+Untuk mendanai refine Anda, fokuslah pada aktivitas pendapatan harian yang memberikan hasil konsisten. [Panduan rutinitas harian](/guides/daily-routine) menyediakan jadwal lengkap, sementara [panduan farming Zeny](/zeny-farming/zeny-farming-guide) mencakup metode perolehan spesifik.
+
+## Penghematan Refine Kafra VIP
+
+Sistem Kafra VIP memberikan bonus tingkat keberhasilan refine yang mengurangi total biaya yang diharapkan di level yang lebih tinggi. Bonus VIP biasanya menambahkan 5-10% ke tingkat keberhasilan dasar, yang secara signifikan mengurangi jumlah percobaan yang diharapkan di level di mana tingkat dasar rendah.
+
+| Level | Tingkat Dasar | Dengan VIP Rate | Percobaan Tersimpan | Zeny Tersimpan |
+|-------|---------------|-----------------|---------------------|----------------|
+| Level 7 | 55% | 60% | ~15% | ~5.500 |
+| Level 10 | 20% | 25% | ~20% | ~80.000 |
+| Level 12 | 10% | 15% | ~33% | ~600.000 |
+| Level 15 | 3% | 8% | ~63% | ~16.700.000 |
+
+Bonus refine VIP memberikan penghematan terbesar pada level refine tertinggi, menjadikan VIP paling hemat biaya bagi pemain yang mendorong melampaui +10. Untuk pemain yang menargetkan +7 atau di bawahnya, penghematan VIP tidak signifikan dan mungkin tidak membenarkan biaya pembelian VIP.
+
+## FAQ
+
+### Bagaimana cara menghitung biaya yang diharapkan untuk target spesifik saya?
+
+Gunakan rumus: Total Biaya = Jumlah dari (1 / Tingkat Keberhasilan di Level N) x (Biaya Per Percobaan di Level N) untuk setiap level dari level Anda saat ini ke target Anda. Tabel dalam panduan ini menyediakan nilai yang diperlukan untuk perhitungan ini. Atau, gunakan kolom biaya kumulatif untuk melihat target Anda secara langsung.
+
+### Bagaimana jika biaya aktual saya melebihi biaya yang diharapkan?
+
+Biaya yang diharapkan adalah rata-rata statistik. Hasil individu bervariasi berdasarkan keberuntungan, dan beberapa pemain akan menghabiskan lebih dari jumlah yang diharapkan sementara yang lain menghabiskan lebih sedikit. Anggarkan sekitar 20-30% di atas biaya yang diharapkan untuk mengantisipasi nasib buruk. Sistem safe memastikan Anda tidak pernah kehilangan equipment, jadi biaya tambahan hanya menunda timeline Anda, bukan equipment Anda.
+
+### Haruskah saya menggunakan Kafra VIP untuk refine?
+
+Bonus refine VIP layak dibeli jika Anda menargetkan +10 atau lebih tinggi. Penghematan di level ini secara signifikan melebihi biaya VIP. Untuk +7 dan di bawahnya, penghematannya terlalu kecil untuk membenarkan pembelian VIP hanya untuk tujuan refine. [Panduan safe refining](/refining/safe-refining-guide) membahas sistem VIP secara lebih rinci.
+
+### Bagaimana cara merencanakan refine di beberapa equipment?
+
+Prioritaskan refine senjata terlebih dahulu, lalu alokasikan sisa anggaran ke armor dan aksesori. Setelah senjata Anda mencapai target utama, alihkan pengeluaran refine ke armor untuk ketahanan. [Panduan prioritas gear terbaik](/refining/best-gear-priority) menyediakan kerangka perencanaan refine multi-bagian yang lengkap.
+
+### Bisakah saya mengurangi biaya refine melalui event?
+
+Ya, event waktu terbatas terkadang memberikan bonus pengurangan biaya refine, diskon material, atau peningkatan tingkat keberhasilan. Rencanakan dorongan refine besar di sekitar event ini untuk memaksimalkan efisiensi biaya. Periksa kalender event dan pengumuman komunitas untuk event refine mendatang sebelum melakukan pengeluaran Zeny besar.

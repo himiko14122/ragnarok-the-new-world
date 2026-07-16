@@ -1,0 +1,174 @@
+export const metadata = {
+  id: "refining-risk-management",
+  slug: "refining-risk-management",
+  order: 5,
+  title: "Ragnarok The New World Refining Risk Management - When to Stop and When to Push",
+  description: "Complete refining risk management guide for Ragnarok The New World. Break probability at each level, expected cost calculations, when to stop refining, and risk-reward analysis for every refinement attempt.",
+  keywords: ["Ragnarok The New World refining risk", "Ragnarok The New World break chance", "Ragnarok The New World when to stop refining", "Ragnarok The New World refinement probability"],
+  category: "refining",
+  date: "2026-07-16",
+  lastModified: "2026-07-16",
+  image: "/images/articles/refining-risk-management.webp",
+  video: "jInsaNmLPg8",
+};
+
+## Refining Risk Management - When to Stop and When to Push
+
+Every refinement attempt in Ragnarok The New World is a calculated gamble where the potential reward of a higher refinement level must be weighed against the risk of equipment destruction and the cost of materials. Understanding the exact break probabilities at each refinement level, the expected cost of reaching target levels, and the risk-reward thresholds for different budget levels transforms refinement from a stressful guessing game into a systematic decision-making process. This guide provides the mathematical framework for refinement risk management, helping you decide precisely when to stop and when to push for higher levels.
+
+The fundamental tension in the refinement system is that each successive level provides diminishing power returns while imposing exponentially increasing costs and break risks. A +4 to +5 upgrade provides the same statistical bonus as a +3 to +4 upgrade, but the cost and risk are dramatically higher. Understanding where the diminishing returns no longer justify the risk is the core of refinement risk management, and the answer differs based on your budget, class, and progression goals.
+
+## Break Probability by Level
+
+### Standard Refinement Break Rates
+
+The break probability increases with each refinement level. When an attempt fails above the safe threshold, the equipment breaks and is destroyed permanently.
+
+| Target Level | Success Rate | Break Rate (on fail) | Safe Attempt? |
+|-------------|-------------|---------------------|---------------|
+| Level 1 | 100% | 0% | Yes |
+| Level 2 | 100% | 0% | Yes |
+| Level 3 | 100% | 0% | Yes |
+| Level 4 | 90% | 0% | Yes (guaranteed no break) |
+| Level 5 | 70% | 10% | Risk begins |
+| Level 6 | 50% | 30% | Moderate risk |
+| Level 7 | 35% | 50% | High risk |
+| Level 8 | 25% | 65% | Very high risk |
+| Level 9 | 15% | 75% | Extreme risk |
+| Level 10 | 10% | 85% | Near-certain break on fail |
+| Level 11 | 5% | 90% | Ultra high risk |
+| Level 12 | 3% | 95% | Maximum risk |
+
+The critical threshold is +4 to +5, where break risk first appears. Every level above +4 introduces break probability on failed attempts, making +4 the "safe cap" where refinement carries zero equipment destruction risk. The [safe refining guide](/refining/safe-refining-guide) covers the +1 through +4 process in detail.
+
+### Break Rate Explained
+
+When a refinement attempt fails above +4, there is a probability that the equipment breaks. The break rate is not 100% on failure — some failures simply leave the equipment at its current level without breaking. The break probability is separate from the success probability:
+
+- **Success**: Equipment gains +1 refinement
+- **Fail without break**: Equipment remains at current level
+- **Fail with break**: Equipment is destroyed permanently
+
+The total probability space is: Success Rate + (Fail Rate x No-Break Rate) + (Fail Rate x Break Rate) = 100%
+
+## Expected Cost Calculator
+
+### Formula for Expected Attempts
+
+The expected number of attempts to reach a target level from a starting level is:
+
+**E(attempts) = 1 / Success Rate**
+
+However, because breaking resets progress (the equipment is destroyed), the effective expected cost must account for replacement equipment:
+
+**Expected Total Cost = (Attempts x Material Cost) + (Break Probability x Replacement Equipment Cost)**
+
+### Cost Estimates by Target Level
+
+| Target Level | Avg Attempts | Material Cost | Break Risk | Expected Replacement Cost | Total Expected Cost |
+|-------------|-------------|---------------|-----------|--------------------------|-------------------|
+| Level 4 | 1.1 | 20K | 0% | 0 | 22K |
+| Level 5 | 1.5 | 30K | 15% | 100K | 145K |
+| Level 6 | 2.0 | 60K | 30% | 200K | 360K |
+| Level 7 | 2.9 | 116K | 50% | 350K | 966K |
+| Level 8 | 4.0 | 200K | 65% | 500K | 1.35M |
+| Level 9 | 6.7 | 400K | 75% | 700K | 2.15M |
+| Level 10 | 10.0 | 700K | 85% | 1M | 3.85M |
+
+These estimates assume average equipment replacement costs. Best-in-slot equipment replacement costs are significantly higher, making high-level refinement of rare equipment extremely expensive. The [refine cost planner](/refining/refine-cost-planner) provides a detailed calculator for your specific equipment values.
+
+## When to Stop Refining
+
+### Budget-Based Stop Points
+
+| Monthly Income | Recommended Stop Point | Reasoning |
+|---------------|----------------------|-----------|
+| Under 500K (Early F2P) | Level 4 | Zero break risk, guaranteed outcome |
+| 500K-2M (F2P) | Level 5-6 | Low risk, manageable replacement cost |
+| 2M-5M (Moderate) | Level 7 | Optimal risk-reward for most content |
+| 5M-10M (Strong) | Level 8-9 | Endgame content requires higher refinement |
+| 10M+ (Wealthy) | Level 10+ | Maximum refinement for competitive edge |
+
+The +4 stop point is the most important recommendation for budget players because it carries zero equipment destruction risk. Every Zeny invested in +4 refinement provides guaranteed value with no possibility of loss. The [F2P Zeny guide](/zeny-farming/f2p-zeny-guide) covers the income levels needed for each refinement tier.
+
+### Class-Based Stop Points
+
+Different classes have different refinement urgency:
+
+| Class | Priority Stop | Reason |
+|-------|-------------|--------|
+| Knight (Tank) | Level 7 armor | Survivability threshold for Hard mode |
+| Knight (DPS) | Level 7 weapon | Bowling Bash damage for farming |
+| Wizard | Level 7 weapon | Farming efficiency threshold |
+| Hunter | Level 7 weapon, then +4 ASPD accessories | ADL output at +7 is sufficient |
+| Priest | Level 4 weapon, +4 armor | Healing is skill-based, not refinement-based |
+| Gunslinger | Level 7 primary, +4 secondary | Ranged weapon first priority |
+
+The [gear priority guide](/refining/best-gear-priority) covers the full class-specific equipment progression paths.
+
+## When to Push for Higher Refinement
+
+### Push Conditions
+
+Push beyond your recommended stop point when all of the following conditions are met:
+
+1. You can afford the replacement cost if the equipment breaks
+2. The statistical upgrade meaningfully impacts your content performance
+3. You have no other higher-priority equipment investments remaining
+4. The content you are attempting requires the additional refinement
+
+Never push refinement to meet a cosmetic or prestige goal. Only push when the statistical improvement directly enables content you are currently attempting. The [refinement breakpoints guide](/refining/refinement-breakpoints) identifies the exact statistical thresholds where additional refinement provides meaningful content access.
+
+### Push Budget Allocation
+
+When pushing for a higher level, set a strict budget:
+
+| Push Target | Maximum Budget | Failure Response |
+|------------|---------------|-----------------|
+| Level 5 to +6 | 200K total | Stop if equipment breaks, rebuild at +4 |
+| Level 6 to +7 | 500K total | Stop if equipment breaks, accept +6 |
+| Level 7 to +8 | 1M total | Stop if equipment breaks, accept +7 |
+| Level 8 to +9 | 2M total | Stop after 2 failed attempts |
+| Level 9 to +10 | 3M total | Stop after 1 failed attempt |
+
+The failure response plan is critical. Before attempting a push, decide in advance what you will do if the equipment breaks. Having a predetermined response prevents emotional decision-making that leads to further losses.
+
+## Risk Mitigation Strategies
+
+### Enriched and HD Materials
+
+Enriched Elunium and Enriched Oridecon increase the success rate of refinement attempts, effectively reducing the break probability. Using enriched materials for +7 and above attempts is strongly recommended despite the higher per-attempt cost, as the improved success rate reduces the total expected cost by decreasing both the number of attempts and the break probability.
+
+| Material Type | Success Rate Bonus | Cost Premium | Recommended Level |
+|-------------|-------------------|---------------|------------------|
+| Standard | None | Base | Level 1 to +4 |
+| Enriched | Level 10% success | 2x material cost | Level 5 to +7 |
+| HD | Level 20% success | 5x material cost | Level 8 to +10 |
+
+The [daily dungeon rewards guide](/dungeons/daily-dungeon-rewards) covers where to obtain enriched and HD materials through regular gameplay.
+
+### Equipment Backup Strategy
+
+Before attempting high-risk refinement, acquire a backup piece of the same equipment type. If the primary breaks during refinement, the backup allows you to continue playing at the +4 level while you work toward acquiring a replacement for another push attempt. Never attempt +7+ refinement on your only copy of essential equipment.
+
+## FAQ
+
+### Is +4 really the safe cap for all equipment?
+
+Yes, +4 is the universal safe cap where refinement never breaks equipment. Every level above +4 introduces break risk regardless of the equipment type, level, or material quality. The +4 safe cap is a fixed system mechanic that does not change. The [safe refining guide](/refining/safe-refining-guide) explains the +1 to +4 process.
+
+### Should I use enriched materials for +5 refinement?
+
+Enriched materials are not cost-effective for +5 refinement because the break probability at +5 is only 10% and the success rate is 70%. The 10% success rate bonus from enriched materials saves minimal expected attempts while doubling the material cost per attempt. Save enriched materials for +7 and above where the success rate bonus meaningfully reduces break probability.
+
+### What happens to cards in equipment that breaks during refinement?
+
+When equipment breaks during refinement, all cards slotted in the equipment are destroyed along with the equipment. This makes high-level refinement of carded equipment extremely risky and expensive. Remove valuable cards before attempting +7+ refinement, or accept the total loss if the break occurs.
+
+### How do I recover from a broken equipment at +8?
+
+Recovery from a high-level break requires rebuilding from scratch: acquire a new base equipment piece, refine it to +4 safely, then attempt another push. The [F2P Zeny guide](/zeny-farming/f2p-zeny-guide) and [daily dungeon guide](/dungeons/daily-dungeon-rewards) cover income strategies for recovering from significant Zeny losses. The key is not attempting another push until you have fully recovered the replacement cost.
+
+### Is refinement luck or strategy?
+
+Both. The outcome of any individual attempt is random, but the long-term results follow the probabilities outlined in this guide. Strategy determines whether you expose yourself to unacceptable risk levels and whether your total expected costs are manageable. A strategic refiner who follows the stop points and budget limits in this guide will consistently progress without catastrophic losses, even though individual results vary. For the official game details, visit the [Steam page](https://store.steampowered.com/app/4212480/).

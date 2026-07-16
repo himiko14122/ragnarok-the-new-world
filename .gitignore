@@ -1,0 +1,10 @@
+node_modules
+.next
+.open-next
+out
+.DS_Store
+*.tsbuildinfo
+.env*.local
+.dev.vars
+src/lib/content-manifest.json
+public/sitemap.xml

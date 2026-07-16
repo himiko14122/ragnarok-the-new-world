@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "google_search",
+      "Fetch(domain:store.steampowered.com)",
+      "Fetch(domain:sand-game.com)",
+      "Fetch(domain:www.pcgamingwiki.com)",
+      "Fetch(domain:sandgame.wiki)",
+      "Fetch(domain:sand-raiders-of-sophie.fandom.com)",
+      "Fetch(domain:steamdb.info)",
+      "Fetch(domain:www.xbox.com)",
+      "Fetch(domain:www.sandraidersofsophie.wiki)",
+      "Fetch(domain:player.gg)",
+      "Fetch(domain:www.pcgamer.com)",
+      "Fetch(domain:www.ign.com)",
+      "Fetch(domain:www.reddit.com)",
+      "Fetch(domain:www.dlh.net)",
+      "Fetch(domain:jeu.video)",
+      "Fetch(domain:www.gamespress.com)",
+      "Fetch(domain:dev.ua)",
+      "Fetch(domain:www.sandraidersofsophie.xyz)",
+      "Fetch(domain:localhost)",
+      "Fetch(domain:steamcharts.com)",
+      "Fetch(domain:www.thegamer.com)",
+      "Fetch(domain:gamerant.com)",
+      "Fetch(domain:mobalytics.gg)",
+      "Fetch(domain:www.gamesradar.com)",
+      "Fetch(domain:vvultimatum.net)",
+      "Fetch(domain:opennext.js.org)",
+      "Fetch(domain:developers.cloudflare.com)"
+    ]
+  }
+}

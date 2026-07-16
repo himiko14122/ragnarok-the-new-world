@@ -1,0 +1,175 @@
+
+export const metadata = {
+  id: "refining-risk-management",
+  slug: "refining-risk-management",
+  order: 5,
+  title: "Manajemen Risiko Refining Ragnarok The New World - Kapan Berhenti dan Kapan Memaksa",
+  description: "Panduan lengkap manajemen risiko refining untuk Ragnarok The New World. Probabilitas hancur di setiap level, perhitungan biaya yang diharapkan, kapan harus berhenti refining, dan analisis risiko-hasil untuk setiap percobaan refinement.",
+  keywords: ["risiko refining Ragnarok The New World", "peluang hancur Ragnarok The New World", "kapan berhenti refining Ragnarok The New World", "probabilitas refinement Ragnarok The New World"],
+  category: "refining",
+  date: "2026-07-16",
+  lastModified: "2026-07-16",
+  image: "/images/articles/refining-risk-management.webp",
+  video: "jInsaNmLPg8",
+};
+
+## Manajemen Risiko Refining - Kapan Berhenti dan Kapan Memaksa
+
+Setiap percobaan refinement di Ragnarok The New World adalah pertaruhan terukur di mana potensi keuntungan dari level refinement yang lebih tinggi harus dipertimbangkan terhadap risiko kehancuran equipment dan biaya material. Memahami probabilitas hancur yang tepat di setiap level refinement, biaya yang diharapkan untuk mencapai level target, dan ambang batas risiko-hasil untuk berbagai tingkat anggaran mengubah refinement dari permainan tebak-tebakan yang menegangkan menjadi proses pengambilan keputusan yang sistematis. Panduan ini menyediakan kerangka matematis untuk manajemen risiko refining, membantu Anda memutuskan dengan tepat kapan harus berhenti dan kapan harus memaksa untuk level yang lebih tinggi.
+
+Ketegangan mendasar dalam sistem refinement adalah bahwa setiap level berturut-turut memberikan keuntungan kekuatan yang semakin berkurang sambil memberlakukan biaya dan risiko hancur yang meningkat secara eksponensial. Upgrade dari +4 ke +5 memberikan bonus statistik yang sama dengan upgrade dari +3 ke +4, tetapi biaya dan risikonya jauh lebih tinggi. Memahami di mana keuntungan yang semakin berkurang tidak lagi membenarkan risikonya adalah inti dari manajemen risiko refining, dan jawabannya berbeda berdasarkan anggaran, kelas, dan tujuan progres Anda.
+
+## Probabilitas Hancur per Level
+
+### Tingkat Kehancuran Refinement Standar
+
+Probabilitas hancur meningkat seiring dengan setiap level refinement. Ketika sebuah percobaan gagal di atas ambang batas aman, equipment tersebut hancur dan hilang secara permanen.
+
+| Level Target | Tingkat Keberhasilan | Tingkat Hancur (saat gagal) | Percobaan Aman? |
+|-------------|---------------------|---------------------------|-----------------|
+| Level 1 | 100% | 0% | Ya |
+| Level 2 | 100% | 0% | Ya |
+| Level 3 | 100% | 0% | Ya |
+| Level 4 | 90% | 0% | Ya (dijamin tidak hancur) |
+| Level 5 | 70% | 10% | Risiko dimulai |
+| Level 6 | 50% | 30% | Risiko sedang |
+| Level 7 | 35% | 50% | Risiko tinggi |
+| Level 8 | 25% | 65% | Risiko sangat tinggi |
+| Level 9 | 15% | 75% | Risiko ekstrem |
+| Level 10 | 10% | 85% | Hampir pasti hancur saat gagal |
+| Level 11 | 5% | 90% | Risiko ultra tinggi |
+| Level 12 | 3% | 95% | Risiko maksimum |
+
+Ambang kritisnya adalah dari +4 ke +5, di mana risiko kehancuran pertama kali muncul. Setiap level di atas +4 memperkenalkan probabilitas hancur pada percobaan yang gagal, menjadikan +4 sebagai "batas aman" di mana refinement membawa risiko kehancuran equipment nol. Panduan [safe refining](/refining/safe-refining-guide) mencakup proses dari +1 hingga +4 secara detail.
+
+### Penjelasan Tingkat Kehancuran
+
+Ketika percobaan refinement gagal di atas +4, ada probabilitas bahwa equipment tersebut hancur. Tingkat kehancuran tidak 100% saat gagal — beberapa kegagalan hanya meninggalkan equipment pada levelnya saat ini tanpa hancur. Probabilitas hancur terpisah dari probabilitas keberhasilan:
+
+- **Berhasil**: Equipment mendapatkan +1 refinement
+- **Gagal tanpa hancur**: Equipment tetap pada level saat ini
+- **Gagal dan hancur**: Equipment hancur secara permanen
+
+Total ruang probabilitas adalah: Tingkat Keberhasilan + (Tingkat Kegagalan x Tingkat Tidak Hancur) + (Tingkat Kegagalan x Tingkat Hancur) = 100%
+
+## Kalkulator Biaya yang Diharapkan
+
+### Rumus untuk Percobaan yang Diharapkan
+
+Jumlah percobaan yang diharapkan untuk mencapai level target dari level awal adalah:
+
+**E(percobaan) = 1 / Tingkat Keberhasilan**
+
+Namun, karena kehancuran mengatur ulang progres (equipment hancur), biaya efektif yang diharapkan harus memperhitungkan equipment pengganti:
+
+**Total Biaya yang Diharapkan = (Percobaan x Biaya Material) + (Probabilitas Hancur x Biaya Equipment Pengganti)**
+
+### Estimasi Biaya per Level Target
+
+| Level Target | Rata-rata Percobaan | Biaya Material | Risiko Hancur | Biaya Penggantian yang Diharapkan | Total Biaya yang Diharapkan |
+|-------------|---------------------|---------------|-------------|---------------------------------|---------------------------|
+| Level 4 | 1.1 | 20K | 0% | 0 | 22K |
+| Level 5 | 1.5 | 30K | 15% | 100K | 145K |
+| Level 6 | 2.0 | 60K | 30% | 200K | 360K |
+| Level 7 | 2.9 | 116K | 50% | 350K | 966K |
+| Level 8 | 4.0 | 200K | 65% | 500K | 1.35M |
+| Level 9 | 6.7 | 400K | 75% | 700K | 2.15M |
+| Level 10 | 10.0 | 700K | 85% | 1M | 3.85M |
+
+Estimasi ini mengasumsikan biaya penggantian equipment rata-rata. Biaya penggantian equipment best-in-slot jauh lebih tinggi, membuat refinement level tinggi untuk equipment langka menjadi sangat mahal. [Perencana biaya refine](/refining/refine-cost-planner) menyediakan kalkulator detail untuk nilai equipment spesifik Anda.
+
+## Kapan Harus Berhenti Refining
+
+### Titik Berhenti Berdasarkan Anggaran
+
+| Pendapatan Bulanan | Titik Berhenti yang Direkomendasikan | Alasan |
+|-------------------|-----------------------------------|--------|
+| Di bawah 500K (F2P Awal) | Level 4 | Risiko hancur nol, hasil terjamin |
+| 500K-2M (F2P) | Level 5-6 | Risiko rendah, biaya penggantian terjangkau |
+| 2M-5M (Menengah) | Level 7 | Risiko-hasil optimal untuk sebagian besar konten |
+| 5M-10M (Kuat) | Level 8-9 | Konten endgame membutuhkan refinement lebih tinggi |
+| 10M+ (Kaya) | Level 10+ | Refinement maksimum untuk keunggulan kompetitif |
+
+Titik berhenti +4 adalah rekomendasi paling penting untuk pemain dengan anggaran terbatas karena tidak membawa risiko kehancuran equipment. Setiap Zeny yang diinvestasikan dalam refinement +4 memberikan nilai terjamin tanpa kemungkinan kerugian. Panduan [F2P Zeny](/zeny-farming/f2p-zeny-guide) mencakup tingkat pendapatan yang dibutuhkan untuk setiap tingkatan refinement.
+
+### Titik Berhenti Berdasarkan Kelas
+
+Kelas yang berbeda memiliki urgensi refinement yang berbeda:
+
+| Kelas | Prioritas Berhenti | Alasan |
+|-------|-------------------|--------|
+| Knight (Tank) | Armor Level 7 | Ambang batas ketahanan untuk mode Hard |
+| Knight (DPS) | Senjata Level 7 | Damage Bowling Bash untuk farming |
+| Wizard | Senjata Level 7 | Ambang batas efisiensi farming |
+| Hunter | Senjata Level 7, lalu aksesoris ASPD +4 | Output ADL di +7 sudah cukup |
+| Priest | Senjata Level 4, armor +4 | Healing berbasis skill, bukan refinement |
+| Gunslinger | Utama Level 7, sekunder +4 | Senjata jarak jauh prioritas pertama |
+
+Panduan [prioritas gear](/refining/best-gear-priority) mencakup jalur progres equipment spesifik kelas secara lengkap.
+
+## Kapan Memaksa untuk Refinement Lebih Tinggi
+
+### Kondisi Memaksa
+
+Paksalah melampaui titik berhenti yang direkomendasikan ketika semua kondisi berikut terpenuhi:
+
+1. Anda mampu membayar biaya penggantian jika equipment hancur
+2. Peningkatan statistik secara berarti memengaruhi performa konten Anda
+3. Anda tidak memiliki investasi equipment prioritas lebih tinggi yang tersisa
+4. Konten yang Anda coba membutuhkan refinement tambahan
+
+Jangan pernah memaksa refinement untuk memenuhi tujuan kosmetik atau prestise. Hanya paksa ketika peningkatan statistik secara langsung memungkinkan akses konten yang sedang Anda coba. Panduan [breakpoints refinement](/refining/refinement-breakpoints) mengidentifikasi ambang batas statistik yang tepat di mana refinement tambahan memberikan akses konten yang berarti.
+
+### Alokasi Anggaran Memaksa
+
+Saat memaksa untuk level yang lebih tinggi, tetapkan anggaran yang ketat:
+
+| Target Paksaan | Anggaran Maksimum | Respons Kegagalan |
+|---------------|-----------------|-------------------|
+| Level 5 ke +6 | Total 200K | Berhenti jika equipment hancur, bangun ulang di +4 |
+| Level 6 ke +7 | Total 500K | Berhenti jika equipment hancur, terima +6 |
+| Level 7 ke +8 | Total 1Jt | Berhenti jika equipment hancur, terima +7 |
+| Level 8 ke +9 | Total 2Jt | Berhenti setelah 2 percobaan gagal |
+| Level 9 ke +10 | Total 3Jt | Berhenti setelah 1 percobaan gagal |
+
+Rencana respons kegagalan sangat penting. Sebelum mencoba memaksa, putuskan terlebih dahulu apa yang akan Anda lakukan jika equipment hancur. Memiliki respons yang telah ditentukan sebelumnya mencegah pengambilan keputusan emosional yang mengarah pada kerugian lebih lanjut.
+
+## Strategi Mitigasi Risiko
+
+### Material Enriched dan HD
+
+Enriched Elunium dan Enriched Oridecon meningkatkan tingkat keberhasilan percobaan refinement, secara efektif mengurangi probabilitas kehancuran. Menggunakan material enriched untuk percobaan +7 ke atas sangat direkomendasikan meskipun biaya per percobaannya lebih tinggi, karena tingkat keberhasilan yang meningkat mengurangi total biaya yang diharapkan dengan mengurangi jumlah percobaan dan probabilitas kehancuran.
+
+| Tipe Material | Bonus Tingkat Keberhasilan | Premium Biaya | Level yang Direkomendasikan |
+|--------------|--------------------------|---------------|---------------------------|
+| Standar | Tidak ada | Dasar | Level 1 ke +4 |
+| Enriched | Keberhasilan Level 10% | 2x biaya material | Level 5 ke +7 |
+| HD | Keberhasilan Level 20% | 5x biaya material | Level 8 ke +10 |
+
+Panduan [daily dungeon rewards](/dungeons/daily-dungeon-rewards) mencakup di mana mendapatkan material enriched dan HD melalui gameplay reguler.
+
+### Strategi Equipment Cadangan
+
+Sebelum mencoba refinement berisiko tinggi, dapatkan equipment cadangan dengan tipe yang sama. Jika equipment utama hancur selama refinement, cadangan memungkinkan Anda untuk terus bermain di level +4 sambil berusaha mendapatkan pengganti untuk percobaan paksaan lainnya. Jangan pernah mencoba refinement +7+ pada satu-satunya salinan equipment penting Anda.
+
+## FAQ
+
+### Apakah +4 benar-benar batas aman untuk semua equipment?
+
+Ya, +4 adalah batas aman universal di mana refinement tidak pernah menghancurkan equipment. Setiap level di atas +4 memperkenalkan risiko kehancuran terlepas dari tipe equipment, level, atau kualitas materialnya. Batas aman +4 adalah mekanisme sistem tetap yang tidak berubah. Panduan [safe refining](/refining/safe-refining-guide) menjelaskan proses dari +1 ke +4.
+
+### Haruskah saya menggunakan material enriched untuk refinement +5?
+
+Material enriched tidak hemat biaya untuk refinement +5 karena probabilitas kehancuran di +5 hanya 10% dan tingkat keberhasilannya 70%. Bonus tingkat keberhasilan 10% dari material enriched menghemat sedikit percobaan yang diharapkan sambil menggandakan biaya material per percobaan. Simpan material enriched untuk +7 ke atas di mana bonus tingkat keberhasilan secara berarti mengurangi probabilitas kehancuran.
+
+### Apa yang terjadi pada kartu di equipment yang hancur selama refinement?
+
+Ketika equipment hancur selama refinement, semua kartu yang disematkan di equipment tersebut ikut hancur bersama equipment. Ini membuat refinement level tinggi pada equipment berkartu menjadi sangat berisiko dan mahal. Lepaskan kartu berharga sebelum mencoba refinement +7+, atau terima kerugian total jika kehancuran terjadi.
+
+### Bagaimana cara saya pulih dari equipment yang hancur di +8?
+
+Pemulihan dari kehancuran level tinggi membutuhkan pembangunan ulang dari awal: dapatkan equipment dasar baru, refine ke +4 dengan aman, lalu coba paksaan lagi. Panduan [F2P Zeny](/zeny-farming/f2p-zeny-guide) dan [daily dungeon](/dungeons/daily-dungeon-rewards) mencakup strategi pendapatan untuk pulih dari kerugian Zeny yang signifikan. Kuncinya adalah tidak mencoba paksaan lagi sampai Anda telah sepenuhnya memulihkan biaya penggantian.
+
+### Apakah refinement itu keberuntungan atau strategi?
+
+Keduanya. Hasil dari setiap percobaan individu adalah acak, tetapi hasil jangka panjang mengikuti probabilitas yang diuraikan dalam panduan ini. Strategi menentukan apakah Anda mengekspos diri Anda pada tingkat risiko yang tidak dapat diterima dan apakah total biaya yang Anda harapkan dapat dikelola. Seorang refiner strategis yang mengikuti titik berhenti dan batasan anggaran dalam panduan ini akan secara konsisten maju tanpa kerugian besar, meskipun hasil individu bervariasi. Untuk detail game resmi, kunjungi [halaman Steam](https://store.steampowered.com/app/4212480/).
