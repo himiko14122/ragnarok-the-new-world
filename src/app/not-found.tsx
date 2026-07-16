@@ -1,19 +1,18 @@
 'use client';
 
 import { useEffect } from 'react';
+import { routing } from '@/i18n/routing';
 
 export default function NotFound() {
   useEffect(() => {
     const p = window.location.pathname;
-    const locales = ['de', 'uk', 'ja', 'en'];
-    const hasLocale = locales.some(
+    const hasLocale = routing.locales.some(
       (l) => p === `/${l}/` || p === `/${l}` || p.startsWith(`/${l}/`)
     );
     if (!hasLocale && p !== '/') {
       const nav = navigator.language.split('-')[0];
-      const target = locales.includes(nav) ? nav : 'en';
-      const prefix = target === 'en' ? '' : `/${target}`;
-      window.location.replace(prefix + p);
+      const target = routing.locales.includes(nav as typeof routing.locales[number]) ? nav : routing.defaultLocale;
+      window.location.replace(`/${target}${p}`);
     }
   }, []);
 

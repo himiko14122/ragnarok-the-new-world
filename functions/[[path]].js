@@ -37,7 +37,7 @@ export function onRequestGet(context) {
   const pathname = url.pathname;
 
   if (hasLocalePrefix(pathname) || isEnPrefixed(pathname) || isStaticAsset(pathname)) {
-    return context.env.ASSETS.fetch(context.request);
+    return fetchWithIndexFallback(context, pathname);
   }
 
   // Since en is the only locale, serve directly from /en/ directory
