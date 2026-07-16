@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "node scripts/generate-content-manifest.mjs && node scripts/generate-sitemap.mjs && next build",
-    "cf-build": "corepack enable && pnpm install --frozen-lockfile && pnpm run build && rm -rf .next/cache",
+    "cf-build": "corepack enable && pnpm install --frozen-lockfile && pnpm run build && rm -rf .next",
     "preview": "npx wrangler pages dev out"
   },
   "dependencies": {
